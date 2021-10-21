@@ -39,8 +39,10 @@ public class PS6 {
         int i = 0;
         int startValue = arr[i];
         while (i < length) {
-            if (arr[i + 1] < arr[i])
+            if (arr[i + 1] < arr[i]) {
                 isSorted = false;
+                break;
+            }
             i++;
         }
         if (isSorted) {
